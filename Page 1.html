@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
             text-align: center;
         }
         header {
@@ -19,9 +19,28 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        section {
-            margin: 20px 0;
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .text {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .image {
+            flex: 0 0 300px; /* Adjust the size of the images */
+            margin: 0 20px;
+        }
+        .image img {
+            width: 100%;
+            max-width: 300px; /* Adjust the size of the images */
         }
     </style>
 </head>
@@ -30,26 +49,30 @@
         <h1>Topics</h1>
     </header>
     <main>
-        <section>
-            <h1>Germany x Australia</h2>
-            <h3>Details about the economic relations between Germany and Australia.</h3>
-            <br><br>
-        </section>
-        <section>
-            <h1>Trading</h1>
-            <h3>Information about trading activities between Australia and other countries.</h3>
-            <br><br>
-        </section>
-        <section>
-            <h1>Bilateral relations</h1>
-            <h3>Insights into the bilateral relations of Australia with other nations.</h3>
-        </section>
-        <br><br>
-        <section>
-            <h1>Conclusion and acknowledgments</h1>
-            <h3>What are Australia's benefits in the global market</h3>
-        </section>
-        <br><br>
+        <div class="content">
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.NbpFDsu7YibwapAP-bkShQHaKz?w=203&h=295&c=7&r=0&o=5&pid=1.7" alt="Image 1">
+            </div>
+            <div class="text">
+                <br><br>
+                <h1>Germany x Australia</h1>
+                <h2>Details about the economic relations between Germany and Australia.</h2>
+                <br><br>
+                <h1>Trading</h1>
+                <h2>Information about trading activities between Australia and other countries.</h2>
+                <br><br>
+                <h1>Bilateral relations</h1>
+                <h2>Insights into the bilateral relations of Australia with other nations.</h2>
+                <br><br>
+                
+                <h1>Thanks for listening</h1>
+                <h2>Conclusion and acknowledgments.</h2>
+                <br><br>
+            </div>
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.NbpFDsu7YibwapAP-bkShQHaKz?w=203&h=295&c=7&r=0&o=5&pid=1.7" alt="Image 2">
+            </div>
+        </div>
         <ul>
             <li><a href="Mainpage.html">Back to Mainpage</a></li>
         </ul>
