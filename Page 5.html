@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
             text-align: center;
         }
         header {
@@ -19,6 +19,28 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .text {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .image {
+            flex: 0 0 300px; /* Adjust the size of the images */
+            margin: 0 20px;
+        }
+        .image img {
+            width: 100%;
+            max-width: 300px; /* Adjust the size of the images */
         }
     </style>
 </head>
@@ -27,16 +49,26 @@
         <h1>Conclusion and acknowledgments</h1>
     </header>
     <main>
-        <h1>How is Australia important for the World Market now?</h1>
-        <br><br>
-        <br><br>
-        <h2>Got many important Trading partnerships</h2>
-        <br><br>
-        <h2>Its an important Partner of Germany with 12.4b$ in Trades</h2>
-        <br><br>
-        <h2>Australia is a natural gateway for startups all over the world/h2>
-            <br><br>
-            <br><br>
+        <div class="content">
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.0QNyrl_rwIwCpDjIjZhSTAHaE7?w=248&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 1">
+            </div>
+            <div class="text">
+                <h1>How is Australia important for the World Market now?</h1>
+                <br><br>
+                <br><br>
+                <h1>Got many important Trading partnerships</h1>
+                <br><br>
+                <h1>It's an important Partner of Germany with 12.4b$ in Trades</h1>
+                <br><br>
+                <h1>Australia is a natural gateway for startups all over the world</h1>
+                <br><br>
+                <br><br>
+            </div>
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.m39uNgbPiEX6hoWwVtrMDwHaE8?pid=ImgDet&w=203&h=135&c=7" alt="Image 2">
+            </div>
+        </div>
         <ul>
             <li><a href="Mainpage.html">Back to Mainpage</a></li>
         </ul>
