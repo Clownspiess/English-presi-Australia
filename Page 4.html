@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
             text-align: center;
         }
         header {
@@ -19,6 +19,28 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .text {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .image {
+            flex: 0 0 300px; /* Adjust the size of the images */
+            margin: 0 20px;
+        }
+        .image img {
+            width: 100%;
+            max-width: 300px; /* Adjust the size of the images */
         }
     </style>
 </head>
@@ -27,18 +49,26 @@
         <h1>Bilateral Partnerships</h1>
     </header>
     <main>
-        <h1>Things that promote sustainable economic growth by trading with biliteral Partners.</h1>
-        <br><br>
-        <h2>Humanitarian needs</h2>
-        <br><br>
-        <h2>Health services</h2>
-        <br><br>
-        <h2>Water, sanitation and hygiene</h2>
-        <br><br>
-        <h2>Education</h2>
-        <br><br>
-        <br><br>
-        <br><br>
+        <div class="content">
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.oRYNAtOXxQLqinhWgfrMqgHaEK?w=330&h=185&c=7&r=0&o=5&pid=1.7" alt="Image 1">
+            </div>
+            <div class="text">
+                <h1>Things that promote sustainable economic growth by trading with bilateral partners.</h1>
+                <br><br>
+                <h2>Humanitarian needs</h2>
+                <br><br>
+                <h2>Health services</h2>
+                <br><br>
+                <h2>Water, sanitation and hygiene</h2>
+                <br><br>
+                <h2>Education</h2>
+                <br><br>
+            </div>
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.jfXsX_knKNnE0qIALdkiHwHaE5?w=248&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 2">
+            </div>
+        </div>
         <ul>
             <li><a href="Mainpage.html">Back to Mainpage</a></li>
         </ul>
