@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
             text-align: center;
         }
         header {
@@ -19,6 +19,28 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .text {
+            flex: 1;
+            padding: 0 30px;
+        }
+        .image {
+            flex: 0 0 500px; /* Adjust the size of the images */
+            margin: 0 30px;
+        }
+        .image img {
+            width: 100%;
+            max-width: 400px; /* Adjust the size of the images */
         }
     </style>
 </head>
@@ -27,21 +49,28 @@
         <h1>Trading</h1>
     </header>
     <main>
-        <h1>Trading Partners and growth in Trading activities</h1>
-        <br><br>
-        <br><br>
-        <h2>China 9.3% growth</h2>
-        <br><br>
-        <h2>US 12.4% growth</h2>
-        <br><br>
-        <h2>New Zealand 10.8% growth </h2>
-        <br><br>
-        <h2>UK 23.8% growth</h2>
-        <br><br>
-        <h2>Thailand 18.4% growth</h2>
-        <br><br>
-        <br><br>
-
+        <div class="content">
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.9TnepMM1MlN2Q6P6--rdBAHaE8?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 1">
+            </div>
+            <div class="text">
+                <h1>Trading Partners and growth in Trading activities</h1>
+                <br><br>
+                <h2>China 9.3% growth</h2>
+                <br><br>
+                <h2>US 12.4% growth</h2>
+                <br><br>
+                <h2>New Zealand 10.8% growth</h2>
+                <br><br>
+                <h2>UK 23.8% growth</h2>
+                <br><br>
+                <h2>Thailand 18.4% growth</h2>
+                <br><br>
+            </div>
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.9TnepMM1MlN2Q6P6--rdBAHaE8?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 2">
+            </div>
+        </div>
         <ul>
             <li><a href="Mainpage.html">Back to Mainpage</a></li>
         </ul>
