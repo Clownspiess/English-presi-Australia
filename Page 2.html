@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
             text-align: center;
         }
         header {
@@ -19,9 +19,28 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        h1 {
-            margin: 20px 0;
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .text {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .image {
+            flex: 0 0 300px; /* Adjust the size of the images */
+            margin: 0 100px;
+        }
+        .image img {
+            width: 100%;
+            max-width: 300px; /* Adjust the size of the images */
         }
     </style>
 </head>
@@ -30,19 +49,26 @@
         <h1>Germany x Australia</h1>
     </header>
     <main>
-        <br><br>
-        <br><br>
-        <br><br>
-        <h2>Germany exported 12.4 billion dollars of products to Australia</h2>
-        <br><br>
-        <h2>Most of the Products that got delivered to Australia were Cars and Packaged Medicaments</h2>
-        <br><br>
-        <h2>The exports of Germany increased by 2.99%</h2>
-        <br><br>
+        <div class="content">
+            <div class="image">
+                <img src="https://th.bing.com/th?id=ODL.5c1eca395a7e8dd337b1adb07bc85593&w=151&h=90&c=10&rs=1&qlt=99&o=6&pid=AlgoBlockDebug" alt="Image 1">
+            </div>
+            <div class="text">
+                <br><br>
+                <br><br>
+                <h1>Germany exported 12.4 billion dollars of products to Australia</h1>
+                <br><br>
+                <br><br>
+                <h1>Most of the Products that got delivered to Australia were Cars and Packaged Medicaments</h1>
+                <br><br>
+                <br><br>
+                <h1>The exports of Germany increased by 2.99%</h1>
+            </div>
+            <div class="image">
+                <img src="https://th.bing.com/th?id=ODL.7c39b36fabb2c627e68dbc993931328a&w=162&h=81&c=10&rs=1&qlt=99&o=6&pid=AlgoBlockDebug" alt="Image 2">
+            </div>
+        </div>
         <ul>
-          
-            <br><br>
-            <br><br>
             <li><a href="Mainpage.html">Back to Mainpage</a></li>
         </ul>
     </main>
